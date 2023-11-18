@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MetaFac.CG4.Attributes
+namespace FluentModels
 {
     [AttributeUsage(AttributeTargets.Property)]
     public class MemberAttribute : Attribute

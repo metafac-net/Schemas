@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using VerifyXunit;
 using Xunit;
 
-namespace MetaFac.CG4.Attributes.UnitTests
+namespace FluentModels.UnitTests
 {
     [UsesVerify]
     public class PublicApiRegressionTests

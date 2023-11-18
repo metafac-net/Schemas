@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using Xunit;
 
-namespace MetaFac.CG4.Attributes.UnitTests
+namespace FluentModels.UnitTests
 {
     [Entity(1)] internal class GoodEntity { }
 

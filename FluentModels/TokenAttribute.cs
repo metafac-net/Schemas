@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MetaFac.CG4.Attributes
+namespace FluentModels
 {
     /// <summary>
     /// Annotates a model entity with a name/value pair.

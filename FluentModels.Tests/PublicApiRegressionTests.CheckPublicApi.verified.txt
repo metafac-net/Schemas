@@ -1,39 +1,22 @@
-﻿namespace MetaFac.CG4.Attributes
+﻿namespace FluentModels
 {
-    [System.AttributeUsage(System.AttributeTargets.Class)]
-    public class CG4GenerateAttribute : System.Attribute
-    {
-        public CG4GenerateAttribute(MetaFac.CG4.Attributes.GeneratorId generatorId, string jsonMetadataFilename) { }
-        public MetaFac.CG4.Attributes.GeneratorId GeneratorId { get; }
-        public string JsonMetadataFilename { get; }
-    }
     [System.AttributeUsage(System.AttributeTargets.Class)]
     public class EntityAttribute : System.Attribute
     {
         public readonly string? Reason;
-        public readonly MetaFac.CG4.Attributes.ModelState State;
+        public readonly FluentModels.ModelState State;
         public readonly int Tag;
-        public EntityAttribute(int tag, MetaFac.CG4.Attributes.ModelState state = 0, string? reason = null) { }
+        public EntityAttribute(int tag, FluentModels.ModelState state = 0, string? reason = null) { }
         public bool Deprecated { get; }
         public bool IsRedacted { get; }
-    }
-    public enum GeneratorId
-    {
-        None = 0,
-        Contracts = 1,
-        MessagePack = 2,
-        ClassesV2 = 3,
-        RecordsV2 = 4,
-        JsonNewtonSoft = 5,
-        JsonSystemText = 6,
     }
     [System.AttributeUsage(System.AttributeTargets.Property)]
     public class MemberAttribute : System.Attribute
     {
         public readonly string? Reason;
-        public readonly MetaFac.CG4.Attributes.ModelState State;
+        public readonly FluentModels.ModelState State;
         public readonly int Tag;
-        public MemberAttribute(int tag, MetaFac.CG4.Attributes.ModelState state = 0, string? reason = null) { }
+        public MemberAttribute(int tag, FluentModels.ModelState state = 0, string? reason = null) { }
         public bool Deprecated { get; }
         public bool IsRedacted { get; }
     }

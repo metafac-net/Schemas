@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MetaFac.CG4.Attributes
+namespace FluentModels
 {
     [Flags]
     public enum ModelState
