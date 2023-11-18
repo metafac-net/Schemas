@@ -1,20 +1,34 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# CG4
+[![Build Status](https://dev.azure.com/MetaFac/OSR/_apis/build/status%2FCG4?branchName=main)](https://dev.azure.com/MetaFac/OSR/_build/latest?definitionId=14&branchName=main)
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## Attributes
+C# attributes for defining CG4 models in code.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## CLI
+A Dotnet tool for:
+- extracting metadata from assemblies
+- reading/writing metadada to JSON files
+- generating code from metadata
+- creating generators from templates
+- creating templates from generators
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Models
+Helpers to write and read CG4 metadata to/from JSON, and from attributed code.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Generators
+C# code generators that use metadata to create POCOs for:
+- freezable classes
+- immutable records
+- polymorphic NewtonSoft.Json DTOs
+- polymorphic System.Text.Json DTOs (.NET 7+)
+- freezable, polymorphic MessagePack DTOs
+- common contracts (interfaces) for all the above.
+
+## Runtimes
+Runtime support for generated DTOs.
+
+## Templates
+Testable templates for above generators.
+
+## TextProcessing
+Bi-directional text processor to convert templates to generators (and back).
