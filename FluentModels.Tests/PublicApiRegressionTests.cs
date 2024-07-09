@@ -5,7 +5,6 @@ using Xunit;
 
 namespace FluentModels.UnitTests
 {
-    [UsesVerify]
     public class PublicApiRegressionTests
     {
         [Fact]
