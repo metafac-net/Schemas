@@ -12,4 +12,3 @@ Attributes for defining data model objects (schemas) in code.
 - **Not** backward compatible with V1.
 - Used by MetaFac CG5 code generation tools.
 - Supports .NET 8.0+
-
