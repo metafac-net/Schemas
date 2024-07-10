@@ -1,4 +1,5 @@
-﻿using PublicApiGenerator;
+﻿using FluentAssertions;
+using PublicApiGenerator;
 using System.Threading.Tasks;
 using VerifyXunit;
 using Xunit;
@@ -7,6 +8,12 @@ namespace FluentModels.UnitTests
 {
     public class PublicApiRegressionTests
     {
+        [Fact]
+        public void VersionCheck()
+        {
+            ThisAssembly.AssemblyVersion.Should().Be("1.0.0.0");
+        }
+
         [Fact]
         public async Task CheckPublicApi()
         {
@@ -20,5 +27,6 @@ namespace FluentModels.UnitTests
             // assert
             await Verifier.Verify(currentApi);
         }
+
     }
 }
