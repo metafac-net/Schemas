@@ -4,7 +4,7 @@
 	"cloudBuild": {
 		"buildNumber": {
 			"enabled": true
-		},
-		"publicReleaseRefSpec": [ "^refs/heads/main$" ]
-	}
+		}
+	},
+	"publicReleaseRefSpec": [ "^refs/heads/main$" ]
 }
