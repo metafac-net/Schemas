@@ -11,7 +11,7 @@ namespace FluentModels.UnitTests
         [Fact]
         public void VersionCheck()
         {
-            ThisAssembly.AssemblyVersion.Should().Be("1.0.0.0");
+            ThisAssembly.AssemblyVersion.Should().Be("1.1.0.0");
         }
 
         [Fact]
