@@ -8,11 +8,11 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-        <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+        <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
         <Authors>MetaFac Contributors</Authors>
         <Company>MetaFac</Company>
         <Product>FluentModels</Product>
-        <Copyright>Copyright (c) 2020-2023 MetaFac</Copyright>
+        <Copyright>Copyright (c) 2020-2024 MetaFac</Copyright>
         <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/metafac-net/FluentModelsV1</PackageProjectUrl>
         <PackageTags>MetaFac, fluent, modelling, meta-programming, generators, model-first, code-first</PackageTags>
