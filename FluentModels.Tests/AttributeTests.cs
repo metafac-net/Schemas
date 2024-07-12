@@ -6,9 +6,7 @@ using Xunit;
 
 namespace FluentModels.UnitTests
 {
-    [Entity(1)] internal class GoodEntity { }
-
-    [Entity(0)] internal class BadTagEntity { }
+    [Entity("7311f284-ae1d-4d26-96f5-5e37f7a66c3e")] internal class GoodEntity { }
 
     public class AttributeTests
     {
@@ -22,17 +20,7 @@ namespace FluentModels.UnitTests
             customAttribute.Should().BeOfType<EntityAttribute>();
 
             EntityAttribute entityAttribute = (EntityAttribute)customAttribute;
-            entityAttribute.Tag.Should().Be(1);
-        }
-
-        [Fact]
-        public void BadTagTest()
-        {
-            var ex = Assert.Throws<ArgumentOutOfRangeException>(() =>
-            {
-                Attribute[] customAttributes = typeof(BadTagEntity).GetCustomAttributes().ToArray();
-            });
-            ex.Message.Should().StartWith("Must be > 0");
+            entityAttribute.UniqueId.Should().Be(new Guid("7311f284-ae1d-4d26-96f5-5e37f7a66c3e"));
         }
     }
 }

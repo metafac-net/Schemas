@@ -2,9 +2,7 @@
 
 namespace FluentModels
 {
-    /// <summary>
-    /// Annotates a model entity with a name/value pair.
-    /// </summary>
+    [AttributeUsage(AttributeTargets.Property | AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Enum)]
     public class TokenAttribute : Attribute
     {
         public readonly string Name;

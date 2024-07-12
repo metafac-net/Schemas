@@ -3,7 +3,7 @@
 namespace FluentModels
 {
     [Flags]
-    public enum ModelState
+    public enum ItemState
     {
         /// <summary>
         /// Active. Emitted during generation.

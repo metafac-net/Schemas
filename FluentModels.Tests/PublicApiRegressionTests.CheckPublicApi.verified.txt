@@ -1,44 +1,70 @@
 ﻿namespace FluentModels
 {
-    [System.AttributeUsage(System.AttributeTargets.Class)]
+    [System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false)]
     public class EntityAttribute : System.Attribute
     {
         public readonly string? Reason;
-        public readonly FluentModels.ModelState State;
-        public readonly int Tag;
-        public EntityAttribute(int tag, FluentModels.ModelState state = 0, string? reason = null) { }
-        public bool Deprecated { get; }
-        public bool IsRedacted { get; }
+        public readonly FluentModels.ItemState State;
+        public readonly System.Guid UniqueId;
+        public EntityAttribute(string uniqueId, FluentModels.ItemState state = 0, string? reason = null) { }
     }
-    [System.AttributeUsage(System.AttributeTargets.Property)]
-    public class MemberAttribute : System.Attribute
+    [System.AttributeUsage(System.AttributeTargets.Enum, AllowMultiple=false)]
+    public class EnumTypeAttribute : System.Attribute
     {
         public readonly string? Reason;
-        public readonly FluentModels.ModelState State;
-        public readonly int Tag;
-        public MemberAttribute(int tag, FluentModels.ModelState state = 0, string? reason = null) { }
-        public bool Deprecated { get; }
-        public bool IsRedacted { get; }
+        public readonly FluentModels.ItemState State;
+        public readonly System.Guid UniqueId;
+        public EnumTypeAttribute(string uniqueId, FluentModels.ItemState state = 0, string? reason = null) { }
+    }
+    public interface IProxyConverter<TExternal, TInternal>
+    {
+        TExternal? ToExternal(TInternal? value);
+        TInternal? ToInternal(TExternal? value);
     }
     [System.Flags]
-    public enum ModelState
+    public enum ItemState
     {
         Active = 0,
         Hidden = 1,
         Deprecated = 2,
         Deleted = 3,
     }
-    [System.AttributeUsage(System.AttributeTargets.Struct)]
-    public class ProxyAttribute : System.Attribute
+    [System.AttributeUsage(System.AttributeTargets.Property)]
+    public class MemberAttribute : System.Attribute
     {
-        public readonly string ConcreteName;
-        public readonly string ExternalName;
-        public ProxyAttribute(string externalName, string concreteName) { }
+        public readonly string? Reason;
+        public readonly int Sequence;
+        public readonly FluentModels.ItemState State;
+        public MemberAttribute(int sequence, FluentModels.ItemState state = 0, string? reason = null) { }
     }
+    public abstract class ProxyAttributeBase : System.Attribute
+    {
+        public readonly string ConverterTypeName;
+        public readonly string ExternalName;
+        public readonly string InternalName;
+        protected ProxyAttributeBase(System.Type externalType, System.Type internalType, System.Type converterType) { }
+    }
+    [System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=true)]
+    public class RefTypeProxyAttribute<TExternal, TInternal, TConverter> : FluentModels.ProxyAttributeBase
+        where TExternal :  class
+        where TInternal :  class
+        where TConverter : FluentModels.IProxyConverter<TExternal, TInternal>
+    {
+        public RefTypeProxyAttribute() { }
+    }
+    [System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Enum | System.AttributeTargets.Property)]
     public class TokenAttribute : System.Attribute
     {
         public readonly string Name;
         public readonly string Value;
         public TokenAttribute(string name, string value) { }
+    }
+    [System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=true)]
+    public class ValTypeProxyAttribute<TExternal, TInternal, TConverter> : FluentModels.ProxyAttributeBase
+        where TExternal :  struct
+        where TInternal :  struct
+        where TConverter : FluentModels.IProxyConverter<TExternal, TInternal>
+    {
+        public ValTypeProxyAttribute() { }
     }
 }
