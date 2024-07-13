@@ -1,5 +1,5 @@
 # FluentModels V2
-**Warning**: This is pre-release. Use at your own risk. Changes will likely break your code ;-)
+**Warning**: This package is pre-release. Use at your own risk. Changes will likely break your code ;-)
 
 Note: If you are looking for V1, which is a stable release, you can find it here: http://github.com/metafac-net/FluentModelsV1
 
