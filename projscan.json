@@ -1,3 +1,6 @@
 {
-  "ProductName": "FluentModels"
+  "ProductName": "FluentModels",
+  "ExemptionCodes": [
+    "targetframeworks_contains_net6"
+  ]
 }
