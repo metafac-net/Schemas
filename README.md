@@ -1,7 +1,4 @@
 # FluentModels V2
-**Warning**: This package is pre-release. Use at your own risk. Changes will likely break your code ;-)
-
-Note: If you are looking for V1, which is a stable release, you can find it here: http://github.com/metafac-net/FluentModelsV1
 
 Attributes for defining data model objects (schemas) in code.
 - Allows defintion of data entities and members, and enumerations.
@@ -10,3 +7,11 @@ Attributes for defining data model objects (schemas) in code.
 - Used by MetaFac CG5 code generation tools (coming soon).
 - **Not** backward compatible with V1.
 - Supports .NET 8.0+
+
+# FluentModels V1
+
+Can be found at: http://github.com/metafac-net/FluentModelsV1.
+
+Alternatively, the V1 types are included in the V2 package in the FluentModelsV1 namespace. This
+can be useful if you need to support both versions in the one solution.
+
