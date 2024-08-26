@@ -1,5 +1,8 @@
 # FluentModels V2
 
+[![FluentModels](https://github.com/metafac-net/FluentModels/actions/workflows/dotnet.yml/badge.svg?branch=main)](https://github.com/metafac-net/FluentModels/actions/workflows/dotnet.yml)
+[![CodeQL](https://github.com/metafac-net/FluentModels/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/metafac-net/FluentModels/actions/workflows/github-code-scanning/codeql)
+
 Attributes for defining data model objects (schemas) in code.
 - Allows defintion of data entities and members, and enumerations.
 - Entities can be closed, or open (generic).
@@ -11,7 +14,3 @@ Attributes for defining data model objects (schemas) in code.
 # FluentModels V1
 
 Can be found at: http://github.com/metafac-net/FluentModelsV1.
-
-Alternatively, the V1 types are included in the V2 package in the FluentModelsV1 namespace. This
-can be useful if you need to support both versions in the one solution.
-
