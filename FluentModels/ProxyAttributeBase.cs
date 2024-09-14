@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FluentModels
+namespace MetaFac.Schemas
 {
     public abstract class ProxyAttributeBase : Attribute
     {

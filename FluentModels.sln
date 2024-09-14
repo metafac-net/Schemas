@@ -13,9 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		version.json = version.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentModels", "FluentModels\FluentModels.csproj", "{6D2D338C-076C-42F7-804F-AD9762D68646}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaFac.Schemas", "FluentModels\MetaFac.Schemas.csproj", "{6D2D338C-076C-42F7-804F-AD9762D68646}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentModels.Tests", "FluentModels.Tests\FluentModels.Tests.csproj", "{9BC0FFA0-34FC-4791-A6E1-E31A9DBCD7B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaFac.Schemas.Tests", "FluentModels.Tests\MetaFac.Schemas.Tests.csproj", "{9BC0FFA0-34FC-4791-A6E1-E31A9DBCD7B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

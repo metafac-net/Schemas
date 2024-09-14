@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FluentModels
+namespace MetaFac.Schemas
 {
     [AttributeUsage(AttributeTargets.Enum, AllowMultiple = false)]
     public class EnumTypeAttribute : Attribute

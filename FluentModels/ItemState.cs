@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FluentModels
+namespace MetaFac.Schemas
 {
     [Flags]
     public enum ItemState

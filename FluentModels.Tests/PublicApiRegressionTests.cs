@@ -1,17 +1,18 @@
 ﻿using FluentAssertions;
+using MetaFac.Schemas;
 using PublicApiGenerator;
 using System.Threading.Tasks;
 using VerifyXunit;
 using Xunit;
 
-namespace FluentModels.UnitTests
+namespace MetaFac.Schemas.Tests
 {
     public class PublicApiRegressionTests
     {
         [Fact]
         public void VersionCheck()
         {
-            ThisAssembly.AssemblyVersion.Should().Be("2.1.0.0");
+            ThisAssembly.AssemblyVersion.Should().Be("1.0.0.0");
         }
 
         [Fact]
@@ -22,7 +23,7 @@ namespace FluentModels.UnitTests
             {
                 IncludeAssemblyAttributes = false
             };
-            string currentApi = ApiGenerator.GeneratePublicApi(typeof(EntityAttribute).Assembly, options);
+            string currentApi = typeof(EntityAttribute).Assembly.GeneratePublicApi(options);
 
             // assert
             await Verifier.Verify(currentApi);

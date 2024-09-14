@@ -1,4 +1,4 @@
-﻿namespace FluentModels
+﻿namespace MetaFac.Schemas
 {
     public interface IProxyConverter<TExternal, TInternal>
     {

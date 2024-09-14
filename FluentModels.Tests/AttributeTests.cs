@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using Xunit;
 
-namespace FluentModels.UnitTests
+namespace MetaFac.Schemas.Tests
 {
     [Entity("7311f284-ae1d-4d26-96f5-5e37f7a66c3e")]
     internal class EntityA

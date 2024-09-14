@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FluentModels
+namespace MetaFac.Schemas
 {
     [AttributeUsage(AttributeTargets.Property)]
     public class MemberAttribute : Attribute

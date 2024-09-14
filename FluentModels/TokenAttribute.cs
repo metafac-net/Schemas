@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FluentModels
+namespace MetaFac.Schemas
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Enum)]
     public class TokenAttribute : Attribute

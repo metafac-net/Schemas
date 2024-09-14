@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FluentModels
+namespace MetaFac.Schemas
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     public class ValTypeProxyAttribute<TExternal, TInternal, TConverter> : ProxyAttributeBase
