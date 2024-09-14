@@ -13,9 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		version.json = version.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaFac.Schemas", "FluentModels\MetaFac.Schemas.csproj", "{6D2D338C-076C-42F7-804F-AD9762D68646}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaFac.Schemas", "MetaFac.Schemas\MetaFac.Schemas.csproj", "{0BF8DB02-F840-4F66-9D62-DC52592553A8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaFac.Schemas.Tests", "FluentModels.Tests\MetaFac.Schemas.Tests.csproj", "{9BC0FFA0-34FC-4791-A6E1-E31A9DBCD7B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaFac.Schemas.Tests", "MetaFac.Schemas.Tests\MetaFac.Schemas.Tests.csproj", "{BE708140-0333-4767-B206-C22ECD42A2E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +23,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6D2D338C-076C-42F7-804F-AD9762D68646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6D2D338C-076C-42F7-804F-AD9762D68646}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6D2D338C-076C-42F7-804F-AD9762D68646}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6D2D338C-076C-42F7-804F-AD9762D68646}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9BC0FFA0-34FC-4791-A6E1-E31A9DBCD7B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9BC0FFA0-34FC-4791-A6E1-E31A9DBCD7B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9BC0FFA0-34FC-4791-A6E1-E31A9DBCD7B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9BC0FFA0-34FC-4791-A6E1-E31A9DBCD7B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BF8DB02-F840-4F66-9D62-DC52592553A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF8DB02-F840-4F66-9D62-DC52592553A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF8DB02-F840-4F66-9D62-DC52592553A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF8DB02-F840-4F66-9D62-DC52592553A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE708140-0333-4767-B206-C22ECD42A2E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE708140-0333-4767-B206-C22ECD42A2E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE708140-0333-4767-B206-C22ECD42A2E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE708140-0333-4767-B206-C22ECD42A2E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
