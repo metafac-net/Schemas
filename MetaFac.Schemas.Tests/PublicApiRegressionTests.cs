@@ -1,6 +1,6 @@
-﻿using FluentAssertions;
-using MetaFac.Schemas;
+﻿using MetaFac.Schemas;
 using PublicApiGenerator;
+using Shouldly;
 using System.Threading.Tasks;
 using VerifyXunit;
 using Xunit;
@@ -12,7 +12,7 @@ namespace MetaFac.Schemas.Tests
         [Fact]
         public void VersionCheck()
         {
-            ThisAssembly.AssemblyVersion.Should().Be("1.1.0.0");
+            ThisAssembly.AssemblyVersion.ShouldBe("1.1.0.0");
         }
 
         [Fact]
